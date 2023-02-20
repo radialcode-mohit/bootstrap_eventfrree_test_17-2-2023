@@ -182,6 +182,20 @@ html {
     box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.05);
 }
 
+.hoverline::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: blue;
+    display: block;
+    margin: auto;
+    transition: all 0.1s linear;
+}
+
+.hoverline:hover::after {
+    width: 100%;
+}
+
 .bg_lightblu {
     background: rgba(44, 73, 254, 0.1);
 
@@ -277,6 +291,24 @@ input {
 .bg_comnt {
     background: #F1F2F5;
     border-radius: 0px 20px 20px 20px;
+}
+
+.cur_poi {
+    cursor: pointer;
+}
+
+.grid_item {
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.grid_item>img {
+    transition: all 0.2s linear;
+
+}
+
+.grid_item>img:hover {
+    transform: scale(1.1);
 }
 
 .border_input {
