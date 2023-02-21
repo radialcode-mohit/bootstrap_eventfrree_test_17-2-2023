@@ -416,6 +416,10 @@ input {
         backdrop-filter: blur(5px);
     }
 
+    nav>ul>li>a {
+        font-size: 20px !important;
+    }
+
     .pos_sticky {
         position: sticky;
         top: 0;
@@ -440,7 +444,7 @@ input {
     :root {
         /* --------------FONT-SIZE-------------- */
 
-        --fs-4xl: 45px;
+        --fs-4xl: 42px;
         --fs-3xl: 36px;
         --fs-2xl: 30px;
         --fs-xl: 28px;
@@ -465,5 +469,11 @@ input {
 
     .maxx_h_300 {
         max-height: 320px;
+    }
+}
+
+@media (min-width:1283px) {
+    .pl_11 {
+        padding-left: 11px;
     }
 }
